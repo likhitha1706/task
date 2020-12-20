@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- <h1 style="text-align: center; font-style: italic;">MARKS DETAILS</h1> -->
+    {%if sub!=0%}
+    <form  action="/add/marks" method="POST">
+
+        <b><center><H1>ADD MARKS</H1></center></b>
+        
+        <div class="sub">
+           
+            <input style="display: none;" type="text" name="num" value={{Roll_no}}>
+            <br><br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="sub1">{{sub[0]}}:</label></b>
+            <input type="text" name="sub1">
+            <br><br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="sub2">{{sub[1]}}:</label></b>
+            <input type="text" name="sub2">
+            <br><br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="sub3">{{sub[2]}}:</label></b>
+            <input type="text" name="sub3">
+            <br><br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="sub4">{{sub[3]}}:</label></b>
+            <input type="text" name="sub4">
+            <br><br>
+            <center><input type="submit" name="Search" value="Submit"></center>
+            <br><br>
+        </div>    
+        
+        
+    </form>
+    {%endif%}
+            
+{% endblock %}        
+
+
+     

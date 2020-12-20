@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Marks</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    </head>
+    <body style="background: linear-gradient(to right, #3399ff 0%, #ff66ff 100%)">
+        <style>
+            .alert {
+              padding: 30px;
+              background-color: whitesmoke;
+              color:rgb(0, 0, 0);
+              border-radius: 25px;
+              text-align: center;
+              width: 30%;
+              margin-left: 35%;
+              
+              
+             
+            }
+            
+            .closebtn {
+              margin-left: 15px;
+              color: rgb(0, 0, 0);
+              font-weight: bold;
+              float: right;
+              font-size: 22px;
+              line-height: 20px;
+              cursor: pointer;
+              transition: 0.3s;
+            }
+            
+            .closebtn:hover {
+              color: rgb(0, 0, 0);
+            }
+
+            
+            </style>
+            </head>
+            <body>
+                <br>
+    
+            {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert" role="alert" style="color: rgb(12, 9, 9); font-family: jura;">
+                    <span>{{ message}}</span>
+                    
+                    <span class="closebtn"  onclick="this.parentElement.style.display='none';">&times;</span> 
+                    
+                
+                </div>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+        <br><br>
+        <h1 class="appTitle">Weclome to the marks management app</h1>
+        <br><br>
+        <!-- <ul class="navbar">
+            <li><a href="/add/student">Add student</a></li>
+            <li><a href="/add/marks">Add marks</a></li>
+            <li><a href="/view/marks">View marks</a></li>
+            <li><a href="/delete/student">Delete student</a></li>
+            <li><a href="/all/marks">All Student Marks</a></li>
+            <li><a href="/consolidate/reports">Consolidation Reports</a></li>
+        </ul>
+
+        <button>Add student</button>
+        <a href="/add/student" class="button">Add student</a>
+        <button class="button">Button</button>
+        <input type="button" class="button" value="Input Button"> -->
+
+        <div class="sec3">
+            <div class="box1">
+                <a class="a" href="/add/student">Add student</a>
+            </div>
+            <div class="box2">
+                <a class="a" href="/add/marks">Add marks</a>
+            </div>
+            <div class="box3">
+                <a class="a" href="/view/marks">View marks</a>
+                
+            </div>
+        </div>
+        <br>
+    
+        <div class="sec3" style="margin-left: 20%;">
+            <div class="box1">
+                <a class="a" href="/delete/student">Delete student</a>
+            </div>
+            <div class="box2">
+                <a class="a" href="/all/marks">All Student Marks</a>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>

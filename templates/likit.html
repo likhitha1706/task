@@ -1,0 +1,95 @@
+<form action="/marks" method="POST">
+        
+    {%if marks!=0%}
+    <b><center><H1>ENTER THE MARKS</H1></center></b>
+    <br><br><br><br>
+    <div class="marks">
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="sub1">{{marks[0]}}:</label></b>
+        <input type="text" name="sub1">
+        <br><br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="sub2">{{marks[1]}}:</label></b>
+        <input type="text" name="sub2">
+        <br><br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="sub3">{{marks[2]}}:</label></b>
+        <input type="text" name="sub3">
+        <br><br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="sub4">{{marks[3]}}:</label></b>
+        <input type="text" name="sub4">
+        <br><br>
+        <center><input type="submit" name="marks" value="Submit"></center>
+        <br><br>
+    {%endif%}
+</form>
+<form>
+    <b><center><H1>CHECK MARKS:</H1></center></b>
+    <br><br>
+    <div class="check">
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="check">ROLL NO:</label></b>
+        <input type="text" name="check">
+        <br><br>
+        <center><input type="submit" name="rollno" value="check"></center>
+        <br><br>
+
+    </div>
+</form>
+
+
+
+
+{%if marks!=0%}
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="two">{{marks[1]}}:</label></b>
+            <input type="text" name="two">
+            <br><br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="three">DEPARTMENT:</label></b>
+            <select name="branch" id="three">
+                <option value="cse">CSE</option>
+                <option value="eee">EEE</option>
+                <option value="ece">ECE</option>
+                <option value="mech">MECH</option>
+                <option value="civil">CIVIL</option>
+            </select>
+            <br><br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="four">YEAR:</label></b>
+            <select name="year" id="four">
+                <option value="1">I</option>
+                <option value="2">II</option>
+                <option value="3">III</option>
+                <option value="4">IV</option>
+            </select>
+            <br><br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="five">SEMISTER:</label></b>
+            <select name="sem" id="five">
+                <option value="I">I</option>
+                <option value="II">II</option>
+            </select>
+            <br><br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="six">SECTION</label></b>
+            <input type="text" name="six">
+            <br><br>
+            <center><input type="submit" value="Submit"></center>
+            <br><br>
+        {%endif%}
+
+
+
+
+
+         <!-- <tr>
+                            <td>{{res[i][0]}}</td>
+                            <td>{{res[i][1]}}</td>
+                            <td>{{res[i][2]}}</td>
+                            <td>{{res[i][3]}}</td>
+                            <td>{{res[i][4]}}</td>
+                            <td>{{res[i][5]}}</td>
+                            <td>{{res[i][6]}}</td>
+                            {% for j in range(0,length2-1) %}
+                           
+                            <td>{{list1[j][0][2]}}</td>
+                            <td>{{list1[j][0][3]}}</td>
+                            <td>{{list1[j][0][4]}}</td>
+                            <td>{{list1[j][0][5]}}</td>
+                            <td>{{list1[j][0][6]}}</td>
+                            
+                            {% endfor %}
+                        </tr> -->

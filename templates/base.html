@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>SUBJECTS</title>
+
+</head>
+<body style="background: linear-gradient(to right, #3399ff 0%, #ff66ff 100%)">
+    <br>
+    <!-- <h1 class="title">ENTER THE MARKS</h1> -->
+    
+
+    <div class="sec3">
+        <div class="box1" style="margin-top: 10%;">
+
+            <form action="" method="POST">
+        
+        
+                <div class="rollno">
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="one">Enter ROLLNO:</label></b>
+                    <input type="text" name="one">
+                    <br><br>
+                    <center><input type="submit" name="Search" value="Search" style="margin-left: -15%;"></center>
+                    <br><br>
+                </div> 
+                
+            </form> 
+
+        </div>
+       
+    </div>
+    <div class="sec3">
+        {%if sub!=0%}
+        <div class="box2" style="padding: 10px; width: 30%; margin-left: 35%;">
+
+            {% block content %}{% endblock %}
+        </div>
+        {%endif%}
+    </div>
+
+    
+</body>
+</html>       

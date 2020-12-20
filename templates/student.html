@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA</title>
+    
+    <style>
+        .body{
+            background: linear-gradient(to right, #3399ff 0%, #ff66ff 100%)
+        }
+
+
+        .title {
+            text-align: center;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .sec3{
+            display: flex;
+           
+            margin-top: 20px;
+            margin: 42px 0px;
+            
+            text-align: center;
+        }
+
+        .box1{
+            box-shadow: 10px 10px 10px #ff99cc;
+            text-align: center;
+            width: 30%;
+            padding: 10px;
+            height: auto;
+            background-color: rgb(88, 87, 86);
+            margin: 10px 5%;
+            border-radius: 10px;
+            transition: all 0.2s ease 0s;
+            margin-left: 35%;
+
+        }
+
+    </style>
+
+</head>
+<body style="background: linear-gradient(to right, #3399ff 0%, #ff66ff 100%) ">
+    <br>
+    <h1 class="title">STUDENT'S DETAILS</h1>
+    
+    <div class="sec3">
+        <div class="box1">
+            <form action="" method="POST">
+               
+                <div class="details">
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="one">STUDENT'S NAME:</label></b>
+                    <input type="text" name="one" required>
+                    <br><br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="two">ROLLNO:</label></b>
+                    <input type="text" name="two" required>
+                    <br><br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="three">DEPARTMENT:</label></b>
+                    <select name="branch" id="three"required>
+                        <option value="cse">CSE</option>
+                        
+                        <option value="ece">ECE</option>
+                        
+                    </select>
+                    <br><br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="four">YEAR:</label></b>
+                    <select name="year" id="four" required>
+                        <option value="1">I</option>
+                        <option value="2">II</option>
+                        <option value="3">III</option>
+                        <option value="4">IV</option>
+                    </select>
+                    <br><br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="five">SEMISTER:</label></b>
+                    <select name="sem" id="five" required>
+                        <option value="I">I</option>
+                        <option value="II">II</option>
+                    </select>
+                    <br><br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="six">SECTION</label></b>
+                    <input type="text" name="six">
+                    <br><br>
+                    <center><input type="submit" name="details" value="submit" ></center>
+                    
+                    
+                    
+        
+                </div>
+            </form>
+        
+
+        </div>
+    </div>
+
+    
+
+
+
+
+
+    
+
+
+
+
+    <!-- <form action="" method="POST">
+        <b><center><H1>STUDENT'S DETAILS</H1></center></b>
+        <br><br><br><br>
+        <div class="details">
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="one">STUDENT'S NAME:</label></b>
+            <input type="text" name="one">
+            <br><br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="two">ROLLNO:</label></b>
+            <input type="text" name="two">
+            <br><br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="three">DEPARTMENT:</label></b>
+            <select name="branch" id="three">
+                <option value="cse">CSE</option>
+                
+                <option value="ece">ECE</option>
+                
+            </select>
+            <br><br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="four">YEAR:</label></b>
+            <select name="year" id="four">
+                <option value="1">I</option>
+                <option value="2">II</option>
+                <option value="3">III</option>
+                <option value="4">IV</option>
+            </select>
+            <br><br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="five">SEMISTER:</label></b>
+            <select name="sem" id="five">
+                <option value="I">I</option>
+                <option value="II">II</option>
+            </select>
+            <br><br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><label for="six">SECTION</label></b>
+            <input type="text" name="six">
+            <br><br>
+            <center><input type="submit" name="details" value="submit" ></center>
+            
+            
+            
+
+        </div>
+    </form> -->
+    
+</body>
+</html>
